@@ -17,6 +17,7 @@ class Player(CircleShape):
 		a = self.position + forward * self.radius
 		b = self.position - forward * self.radius - right
 		c = self.position - forward * self.radius + right
+		#print("self:", self.position)
 		return [a, b, c]
 
 	def update(self, dt):
