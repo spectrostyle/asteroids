@@ -1,0 +1,2 @@
+if asteroid.collides_with(shots):
+					print("hit")
