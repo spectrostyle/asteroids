@@ -31,14 +31,16 @@ def main():
 
 		updatable.update(dt)
 
-		#for x in asteroids:
-		#	player.collision_check(x)
+		for x in asteroids:
+			if player.collision_check(x):
+				print("Game over!")
+				import sys
+				sys.exit()
 
 		screen.fill("black")
 
 		for obj in drawable:
 			obj.draw(screen)
-
 		pygame.display.flip()
 
 		# to limit the framerate to 60 FPS
